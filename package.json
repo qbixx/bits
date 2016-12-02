@@ -3,19 +3,24 @@
   "version": "0.1",
   "description": "Base template for ProcessWire projects",
   "author": "Qbixx | Webservices",
-  "repository": "github:Qbixx/Bits",
+  "repository": "github:Qbixx/bits",
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.8.1",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-cheerio": "^0.6.2",
+    "gulp-connect": "^5.0.0",
     "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-svgstore": "^6.1.0",
+    "inuitcss": "^6.0.0-beta.4",
     "postcss-assets": "^4.1.0",
-    "postcss-reporter": "^2.0.0"
+    "postcss-reporter": "^2.0.0",
+    "postcss-sorting": "^1.7.0"
   }
 }

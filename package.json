@@ -1,9 +1,9 @@
 {
   "name": "Bits",
-  "version": "1.0.0",
-  "description": "Base template for Qbixx ProcessWire",
-  "main": "index.js",
+  "version": "0.1",
+  "description": "Base template for ProcessWire projects",
   "author": "Qbixx | Webservices",
+  "repository": "github:Qbixx/Bits",
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "css-mqpacker": "^5.0.1",

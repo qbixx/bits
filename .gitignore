@@ -1,0 +1,32 @@
+# Sass #
+########
+.sass-cache
+.sass-cache/*
+*.css.map
+
+# ProcessWire related files #
+#############################
+assets
+assets/*
+modules
+modules/*
+config.php
+
+# Yarn #
+########
+node_modules/
+node_modules/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*[a-z].1
+*[a-z].1/*
+sess_*
+*.cache

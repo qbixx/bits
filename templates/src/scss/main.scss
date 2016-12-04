@@ -69,12 +69,14 @@
  */
 
 // SETTINGS
+// @import "settings/settings.variables";
 @import "settings/settings.config";
+@import "settings/settings.units";
 @import "../../../node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
-
-
-
+@import "settings/settings.typography";
+@import "settings/settings.breakpoints";
+@import "settings/settings.colors";
 
 
 // TOOLS
@@ -83,6 +85,7 @@
 @import "../../../node_modules/inuitcss/tools/tools.clearfix";
 @import "../../../node_modules/inuitcss/tools/tools.hidden";
 @import "../../../node_modules/sass-mq/mq";
+@import "tools/tools.aliases";
 
 
 
@@ -104,15 +107,16 @@
 @import "../../../node_modules/inuitcss/elements/elements.images";
 @import "../../../node_modules/inuitcss/elements/elements.tables";
 
-
-
+@import "elements/elements.page";
+@import "elements/elements.typography";
+@import "elements/elements.links";
 
 
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
 @import "../../../node_modules/inuitcss/objects/objects.wrapper";
-@import "../../../node_modules/inuitcss/objects/objects.layout";
+// @import "../../../node_modules/inuitcss/objects/objects.layout";
 @import "../../../node_modules/inuitcss/objects/objects.media";
 @import "../../../node_modules/inuitcss/objects/objects.flag";
 @import "../../../node_modules/inuitcss/objects/objects.list-bare";
@@ -123,8 +127,7 @@
 @import "../../../node_modules/inuitcss/objects/objects.crop";
 @import "../../../node_modules/inuitcss/objects/objects.tables";
 @import "../../../node_modules/inuitcss/objects/objects.pack";
-
-
+@import "objects/objects.columns";
 
 
 
@@ -132,9 +135,7 @@
 //
 // Build and include your project’s UI Compoments here.
 @import "components/components.buttons";
-
-
-
+@import "components/components.accordion";
 
 
 // UTILITIES
@@ -146,3 +147,4 @@ $inuit-offsets: true;
 @import "../../../node_modules/inuitcss/utilities/utilities.spacing";
 @import "../../../node_modules/inuitcss/utilities/utilities.print";
 @import "../../../node_modules/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.helpers";

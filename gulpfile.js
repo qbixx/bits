@@ -49,9 +49,10 @@ gulp.task('styles', function() {
          cachebuster: true
         }),
      cssnano({
-       discardComments: {
-         removeAll: true
-       }
+         core: false,
+         discardComments: {
+             removeAll: true
+         }
      }),
      sorting({})
    ];

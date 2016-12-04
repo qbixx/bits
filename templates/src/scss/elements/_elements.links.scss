@@ -1,0 +1,8 @@
+a {
+    color: $c-link;
+    cursor: pointer;
+    transition: $global-transition;
+    &:hover {
+        color: $c-link-hover;
+    }
+}

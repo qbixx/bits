@@ -1,0 +1,41 @@
+// COLORS
+$blue: #00a9e5;
+$dark-blue: #0076bf;
+$dark-blue2: #00569b;
+
+$light-gray: #eee;
+$light-gray2: #f1f3f5;
+
+$orange: #fb7e2a;
+
+// MAIN APPLICATION
+$c-primary: $blue;
+$c-secundary: $orange;
+$c-text: darken($dark-blue, 20%);
+$c-heading: darken($dark-blue, 25%);
+
+// LINKS
+$c-link: $blue;
+$c-link-hover: darken($blue, 15%);
+
+// BUTTONS
+$c-btn-primary: $blue;
+$c-btn-primary-hover: darken($blue, 10%);
+$c-btn-secondary: $orange;
+$c-btn-secondary-hover: darken($orange, 15%);
+
+// HEAD NAV
+$c-head-nav: $blue;
+$c-head-nav-hover: $dark-blue;
+$c-head-nav-hover-border: $orange;
+
+// BORDER
+$c-border-main: $light-gray;
+$base-border: 1px solid $c-border-main;
+
+// FOOTER
+$c-bg-footer: $dark-blue2;
+$c-link-footer: lighten($c-bg-footer, 50%);
+
+// ACCORDION
+$c-bg-accordion: $light-gray2;

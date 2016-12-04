@@ -22,3 +22,19 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+// Place any jQuery/helper plugins in here.
+$(document).ready(function () {
+    // Accordion
+  $('.c-accordion__toggle').on('click', function(event){
+  	event.preventDefault();
+  	// create accordion variables
+  	var accordion = $(this);
+  	var accordionContent = accordion.next('.c-accordion__content');
+  	var accordionToggleIcon = $(this).children('.toggle-icon');
+
+  	// toggle accordion link open class
+  	accordion.toggleClass("is-active");
+  	// toggle accordion content
+  	accordionContent.slideToggle(150);
+  });
+});

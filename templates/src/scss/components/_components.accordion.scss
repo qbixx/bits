@@ -1,0 +1,41 @@
+.c-accordion {
+    &__item {
+        width: 100%;
+        margin-bottom: -1px;
+    	clear: both;
+        border-top: $base-border;
+        border-bottom: $base-border;
+    }
+
+    &__toggle {
+        color: $blue;
+      	position: relative;
+      	display: block;
+      	padding: $small-spacing $base-spacing;
+      	text-decoration: none;
+        box-shadow: none;
+        &.is-active {
+            background: $dark-blue;
+        	color: #fff;
+            .icon-add {
+            transform: rotate(45deg);
+          }
+        }
+        .icon-add {
+          float: right;
+          margin: $small-spacing/2 0;
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 1em;
+        overflow: auto;
+        background: $c-bg-accordion;
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

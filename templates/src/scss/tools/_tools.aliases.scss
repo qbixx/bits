@@ -1,0 +1,4 @@
+// Reassign `$inuit-global-spacing-unit` to `$base-spacing`.
+$base-spacing: $inuit-global-spacing-unit;
+$small-spacing: $inuit-global-spacing-unit-small;
+$large-spacing: $inuit-global-spacing-unit-large;

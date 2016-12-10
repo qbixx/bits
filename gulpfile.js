@@ -52,7 +52,8 @@ gulp.task('styles', function() {
          core: false,
          discardComments: {
              removeAll: true
-         }
+         },
+         colormin: false
      }),
      sorting({})
    ];

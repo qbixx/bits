@@ -4,55 +4,55 @@
     flex-grow: 1;
     flex-shrink: 1;
     padding: $base-spacing;
-    .columns.is-mobile > &.is-narrow {
+    .o-columns.is-mobile > &.is-narrow {
         flex: none;
     }
-    .columns.is-mobile > &.is-full {
+    .o-columns.is-mobile > &.is-full {
         flex: none;
         width: 100%;
     }
-    .columns.is-mobile > &.is-three-quarters {
+    .o-columns.is-mobile > &.is-three-quarters {
         flex: none;
         width: 75%;
     }
-    .columns.is-mobile > &.is-two-thirds {
+    .o-columns.is-mobile > &.is-two-thirds {
         flex: none;
         width: 66.6666%;
     }
-    .columns.is-mobile > &.is-half {
+    .o-columns.is-mobile > &.is-half {
         flex: none;
         width: 50%;
     }
-    .columns.is-mobile > &.is-one-third {
+    .o-columns.is-mobile > &.is-one-third {
         flex: none;
         width: 33.3333%;
     }
-    .columns.is-mobile > &.is-one-quarter {
+    .o-columns.is-mobile > &.is-one-quarter {
         flex: none;
         width: 25%;
     }
-    .columns.is-mobile > &.is-offset-three-quarters {
+    .o-columns.is-mobile > &.is-offset-three-quarters {
         margin-left: 75%;
     }
-    .columns.is-mobile > &.is-offset-two-thirds {
+    .o-columns.is-mobile > &.is-offset-two-thirds {
         margin-left: 66.6666%;
     }
-    .columns.is-mobile > &.is-offset-half {
+    .o-columns.is-mobile > &.is-offset-half {
         margin-left: 50%;
     }
-    .columns.is-mobile > &.is-offset-one-third {
+    .o-columns.is-mobile > &.is-offset-one-third {
         margin-left: 33.3333%;
     }
-    .columns.is-mobile > &.is-offset-one-quarter {
+    .o-columns.is-mobile > &.is-offset-one-quarter {
         margin-left: 25%;
     }
 
     @for $i from 1 through 12 {
-        .columns.is-mobile > &.is-#{$i} {
+        .o-columns.is-mobile > &.is-#{$i} {
             flex: none;
             width: ($i / 12) * 100%;
         }
-        .columns.is-mobile > &.is-offset-#{$i} {
+        .o-columns.is-mobile > &.is-offset-#{$i} {
             margin-left: ($i / 12) * 100%;
         }
     }

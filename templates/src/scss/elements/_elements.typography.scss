@@ -7,3 +7,9 @@ h6 {
     color: $c-heading;
     font-family: $heading-font-family;
 }
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid $c-primary;
+    padding: $base-spacing $large-spacing;
+}

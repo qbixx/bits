@@ -19,3 +19,108 @@
 .u-has-text-right {
     text-align: right;
 }
+
+// Display
+
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
+
+@each $display in $displays {
+    .u-is-#{$display} {
+        display: #{$display}
+    }
+    .u-is-#{$display}-mobile {
+        @include mq($until: mobile) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-tablet {
+        @include mq($from: tablet) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-tablet-only {
+        @include mq(tablet, desktop) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-touch {
+        @include mq($until: desktop) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-desktop {
+        @include mq($from: desktop) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-desktop-only {
+        @include mq(desktop, widescreen) {
+            display: #{$display} !important
+        }
+    }
+    .u-is-#{$display}-widescreen {
+        @include mq(widescreen) {
+            display: #{$display} !important
+        }
+    }
+}
+
+// Float
+
+.u-is-pulled-left {
+    float: left
+}
+
+.u-is-pulled-right {
+    float: right
+}
+
+// Overflow
+
+.u-is-clipped {
+    overflow: hidden !important
+}
+
+// Visibility
+
+.u-is-hidden-mobile {
+    @include mq($until: mobile) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-tablet {
+    @include mq($from: tablet) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-tablet-only {
+    @include mq(tablet, desktop) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-touch {
+    @include mq($until: desktop) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-desktop {
+    @include mq($from: desktop) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-desktop-only {
+    @include mq(desktop, widescreen) {
+        display: none !important
+    }
+}
+
+.u-is-hidden-widescreen {
+    @include mq(widescreen) {
+        display: none !important
+    }
+}

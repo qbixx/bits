@@ -1,0 +1,51 @@
+.o-title,
+.o-subtitle {
+    font-weight: $weight-title-normal;
+    word-break: break-word;
+    &:not(:last-child) {
+        margin-bottom: $base-spacing;
+    }
+    em,
+    span {
+        font-weight: $weight-title-normal
+    }
+    a {
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+    strong {
+        font-weight: $weight-title-bold;
+    }
+    .tag {
+        vertical-align: bottom;
+    }
+}
+
+.o-title {
+    color: $c-heading;
+    line-height: 1;
+    code {
+        display: inline-block;
+    }
+    strong {
+        color: inherit;
+    }
+    & + .subtitle {
+        margin-top: -10px;
+    }
+    // Responsiveness
+    @include mq(tablet) {
+        & + .subtitle {
+            margin-top: -15px;
+        }
+    }
+}
+
+.o-subtitle {
+    color: $c-text;
+    line-height: 1.125;
+    & + .title {
+        margin-top: -20px;
+    }
+}

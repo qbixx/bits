@@ -71,10 +71,9 @@
 // SETTINGS
 // @import "settings/settings.variables";
 @import "settings/settings.config";
-@import "settings/settings.units";
+@import "settings/settings.variables";
 @import "../../../node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
-@import "settings/settings.typography";
 @import "settings/settings.breakpoints";
 @import "settings/settings.colors";
 
@@ -131,6 +130,8 @@
 
 @import "objects/objects.columns";
 @import "objects/objects.image";
+@import "objects/objects.title";
+@import "objects/objects.content";
 
 
 // COMPONENTS

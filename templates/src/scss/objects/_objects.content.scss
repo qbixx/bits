@@ -1,0 +1,67 @@
+.o-content {
+    &:not(:last-child) {
+        margin-bottom: $base-spacing;
+    }
+    // Inline
+    a:not(.button) {
+        border-bottom: $base-border;
+        &:visited {
+            color: $c-link;
+        }
+        &:hover {
+            border-bottom-color: $c-link-hover;
+        }
+    }
+    li + li {
+        margin-top: 0.25em;
+    }
+    // Block
+    blockquote,
+    p,
+    ol,
+    ul {
+        &:not(:last-child) {
+            margin-bottom: $large-spacing;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.125;
+        margin-bottom: $small-spacing;
+    }
+    h1,
+    h2,
+    h3 {
+        &:not(:first-child) {
+            margin-top: $large-spacing;
+        }
+    }
+    blockquote {
+        font-style: italic;
+        border-left: 4px solid $c-primary;
+        padding: $base-spacing $large-spacing;
+    }
+    ol {
+        list-style: decimal outside;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+    }
+    ul {
+        list-style: disc outside;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        ul {
+            list-style-type: circle;
+            margin-top: 0.5em;
+            ul {
+                list-style-type: square;
+            }
+        }
+    }
+}

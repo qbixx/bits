@@ -3,7 +3,7 @@
     font-weight: $weight-title;
     word-break: break-word;
     &:not(:last-child) {
-        margin-bottom: $base-spacing;
+        margin-bottom: $small-spacing;
     }
     em,
     span {

@@ -12,5 +12,4 @@ $heading-font-family: $base-font-family;
 // Weights
 $weight-normal: 400 !default;
 $weight-bold: 700 !default;
-$weight-title-normal: 300 !default;
-$weight-title-bold: 500 !default;
+$weight-title: $weight-bold !default;

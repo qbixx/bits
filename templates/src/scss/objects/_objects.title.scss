@@ -1,13 +1,13 @@
 .o-title,
 .o-subtitle {
-    font-weight: $weight-title-normal;
+    font-weight: $weight-title;
     word-break: break-word;
     &:not(:last-child) {
         margin-bottom: $base-spacing;
     }
     em,
     span {
-        font-weight: $weight-title-normal
+        font-weight: $weight-title;
     }
     a {
         &:hover {
@@ -15,7 +15,7 @@
         }
     }
     strong {
-        font-weight: $weight-title-bold;
+        font-weight: $weight-title;
     }
     .tag {
         vertical-align: bottom;

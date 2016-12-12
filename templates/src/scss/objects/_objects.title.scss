@@ -31,12 +31,12 @@
     strong {
         color: inherit;
     }
-    & + .subtitle {
+    & + .o-subtitle {
         margin-top: -10px;
     }
     // Responsiveness
     @include mq(tablet) {
-        & + .subtitle {
+        & + .o-subtitle {
             margin-top: -15px;
         }
     }
@@ -45,7 +45,7 @@
 .o-subtitle {
     color: $c-text;
     line-height: 1.125;
-    & + .title {
+    & + .o-title {
         margin-top: -20px;
     }
 }

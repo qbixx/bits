@@ -117,7 +117,7 @@ gulp.task('styles', function() {
   */
   gulp.task('connect', function() {
     connect.server({
-      root: 'templates',
+      root: 'templates/src/html',
       livereload: true
     });
   });

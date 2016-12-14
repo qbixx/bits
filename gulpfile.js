@@ -105,6 +105,14 @@ gulp.task('styles', function() {
  });
 
  /**
+ * HTML templates
+ */
+ gulp.task('html', function () {
+   gulp.src('templates/src/html/**/*.html')
+     .pipe(connect.reload());
+ });
+
+ /**
   * Connect
   */
   gulp.task('connect', function() {
@@ -137,6 +145,9 @@ gulp.task('styles', function() {
 
     // Watch icon files
     gulp.watch('templates/src/icons/*', ['icons']);
+
+    // Watch html files
+    gulp.watch('templates/src/html/**/*.html', ['html']);
 
  });
 

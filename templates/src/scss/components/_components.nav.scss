@@ -1,0 +1,189 @@
+$nav-height: 60px !default;
+
+// Components
+
+.nav-toggle {
+    @include hamburger($nav-height)
+    // Responsiveness
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.nav-item {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: $small-spacing;
+    a {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    img {
+        max-height: 24px;
+    }
+    &.is-brand {
+        height: $nav-height;
+        width: 132px;
+        display: block;
+        background: resolve('logo.svg') no-repeat;
+        @include hide-text;
+        padding: 0;
+    }
+    .button + .button {
+        margin-left: 10px;
+    }
+    .tag {
+        &:first-child {
+            margin-right: 5px;
+        }
+        &:last-child {
+            margin-left: 5px;
+        }
+    }
+    // Responsiveness
+    @include mq($until: mobile) {
+        justify-content: flex-start;
+    }
+}
+
+.nav-item a,
+a.nav-item {
+    color: $c-head-nav;
+    &:hover {
+        color: $c-head-nav-hover;
+    }
+    // Modifiers
+    &.is-active {
+        color: $c-head-nav-hover;
+    }
+    &.is-tab {
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        padding-left: 12px;
+        padding-right: 12px;
+        &:hover {
+            border-bottom: 1px solid $c-link;
+            border-top: 1px solid transparent;
+        }
+        &.is-active {
+            border-bottom: 3px solid $c-link;
+            border-top: 3px solid transparent;
+            color: $c-link;
+        }
+    }
+}
+
+// Containers
+
+.nav-menu {
+    // Responsiveness
+    @include mq($until: tablet) {
+        background-color: $white;
+        box-shadow: 0 4px 7px rgba($black, 0.1);
+        left: 0;
+        display: none;
+        right: 0;
+        top: 100%;
+        position: absolute;
+        .nav-item {
+            border-top: 1px solid rgba($c-border-main, 0.5);
+            padding: $small-spacing;
+        }
+        &.is-active {
+            display: block;
+        }
+    }
+    @include mq(mobile, tablet) {
+        padding-right: $base-spacing;
+    }
+}
+
+.nav-left {
+    align-items: stretch;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-center {
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-right {
+    // Responsiveness
+    @include mq(tablet) {
+        align-items: stretch;
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: flex-end;
+    }
+}
+
+// Main container
+
+.nav {
+    align-items: stretch;
+    background-color: $bg-head;
+    display: flex;
+    min-height: $nav-height;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    & > .container {
+        align-items: stretch;
+        display: flex;
+        min-height: $nav-height;
+        width: 100%;
+        & > .nav-left {
+            & > .nav-item:first-child:not(.is-tab) {
+                padding-left: 0;
+            }
+        }
+        & > .nav-right {
+            & > .nav-item:last-child:not(.is-tab) {
+                padding-right: 0;
+            }
+        }
+    }
+    .container > & {
+        & > .nav-left {
+            & > .nav-item:first-child:not(.is-tab) {
+                padding-left: 0;
+            }
+        }
+        & > .nav-right {
+            & > .nav-item:last-child:not(.is-tab) {
+                padding-right: 0;
+            }
+        }
+    }
+    // Modifiers
+    &.has-shadow {
+        box-shadow: 0 2px 3px rgba($black, 0.1);
+    }
+    // Responsiveness
+    @include mq($until: desktop) {
+        & > .container,
+        .container > & {
+            & > .nav-left {
+                & > .nav-item.is-brand:first-child {
+                    padding-left: $base-spacing;
+                }
+            }
+        }
+    }
+}

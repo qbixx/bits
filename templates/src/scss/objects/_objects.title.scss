@@ -18,7 +18,7 @@
         font-weight: $weight-title;
     }
     .tag {
-        vertical-align: bottom;
+        vertical-align: middle;
     }
 }
 
@@ -31,21 +31,9 @@
     strong {
         color: inherit;
     }
-    & + .o-subtitle {
-        margin-top: -10px;
-    }
-    // Responsiveness
-    @include mq(tablet) {
-        & + .o-subtitle {
-            margin-top: -15px;
-        }
-    }
 }
 
 .o-subtitle {
-    color: $c-text;
+    color: $c-heading;
     line-height: 1.125;
-    & + .o-title {
-        margin-top: -20px;
-    }
 }

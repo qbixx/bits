@@ -7,6 +7,15 @@ $dimensions: 16 24 32 48 64 96 128;
         display: block;
         height: auto;
         width: 100%;
+        transition: opacity 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    }
+    // Lazy load styling
+    .lazyload,
+    .lazyloading {
+    opacity: 0;
+    }
+    .lazyloaded {
+    opacity: 1;
     }
     // Ratio
     &.is-square,

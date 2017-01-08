@@ -3,15 +3,6 @@
         margin-bottom: $base-spacing;
     }
     // Inline
-    a:not(.button) {
-        border-bottom: $base-border;
-        &:visited {
-            color: $c-link;
-        }
-        &:hover {
-            border-bottom-color: $c-link-hover;
-        }
-    }
     li + li {
         margin-top: 0.25em;
     }
